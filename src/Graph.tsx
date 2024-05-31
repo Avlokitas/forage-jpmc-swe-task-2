@@ -40,7 +40,7 @@ class Graph extends Component<IProps, {}> {
       timestamp: 'date',
     };
 
-    if (window.perspective && window.perspective.xworker()) {
+    if (window.perspective && window.perspective.worker()) {
       this.table = window.perspective.worker().table(schema);
     }
     if (this.table) {
